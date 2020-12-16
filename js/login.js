@@ -1,1 +1,4 @@
-alert("OK");
+function verif()
+{
+    alert("ok");
+}
