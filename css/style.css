@@ -106,3 +106,7 @@ a
 	padding-right: 5%;
 	margin: 0;
 }
+.section
+{
+	display: flex;
+}
