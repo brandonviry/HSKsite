@@ -1,4 +1,5 @@
 function verif()
 {
-    alert("ok");
+    var pwd =document.getElementsByTagName("input")[0].innerHTML.value;
+    alert("var");
 }
