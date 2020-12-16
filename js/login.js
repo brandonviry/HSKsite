@@ -1,5 +1,5 @@
 function verif()
 {
-    var pwd =document.getElementsByTagName("input")[0].innerHTML.value;
-    alert(pwd);
+    var pwd =document.getElementsByTagName("input")[0].innerHTML;
+    console.log(pwd);
 }
