@@ -1,0 +1,34 @@
+/* Système d'inversion des couleurs */
+.inverted-colors {
+    filter: invert(1) hue-rotate(180deg);
+}
+
+/* Correction pour les images afin qu'elles ne soient pas inversées deux fois */
+.inverted-colors img,
+.inverted-colors .logo,
+.inverted-colors [style*="background-image"] {
+    filter: invert(1) hue-rotate(180deg);
+}
+
+/* Correction pour les éléments avec des couleurs spécifiques */
+.inverted-colors .social-card,
+.inverted-colors .form,
+.inverted-colors .header {
+    filter: none;
+}
+
+/* Animation de transition pour l'inversion */
+body {
+    transition: filter 0.3s ease-in-out;
+}
+
+/* Styles spéciaux pour le mode inversé */
+.inverted-colors .etat0 {
+    background: linear-gradient(45deg, #00A8FF, #0097E6);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 10px;
+    font-weight: bold;
+}

@@ -3,6 +3,7 @@
 <head>
 	<title>HSKsite</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/command.css">
 	<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet"> 
 	<meta charset="UTF-8">
 	<meta name="description" content="Site web TEMPORAIRE de Hi_shikuro">
@@ -14,12 +15,12 @@
 		<img src="img/HSK.png" alt="logo">
 		<h1>HI_SHIKURO</h1>
 	</header>
-	<section class="identification">
+	<section class="form">
 		<h2>Bienvenue sur Mon site</h2>
-		<h3>LOGIN :<span class="etat">Accès restreint</span> </h3>
-		<form action="login.php" method="POST">
+		<h3>LOGIN :<span class="etat0">Accès restreint</span> </h3>
+		<form >
 			<input type="password" name="password">
-			<input type="submit" value="CONNECTION" onclick="verif();">
+			<input type="submit" value="CONNECTION">
 		</form>
 		
 		
@@ -28,26 +29,151 @@
 	<h1>Agenda  "YouTube"</h1>
 	<section class="section">
 		<iframe iframe class="agenda" src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=Indian%2FReunion&amp;src=c3JxbXBhZ2Y2OGdjZ3JwdnFkdm1lcnRkOWtAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;color=%23F6BF26&amp;mode=WEEK&amp;title=Agenda%20REU"  frameborder="0" scrolling="no"></iframe>
-		<iframe width="560" height="315" src="https://www.youtube.com/embed/IYOsf5MBTtw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		<iframe id="youtube" src="https://www.youtube.com/embed/IYOsf5MBTtw?autoplay=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 	</section>
-	<h1>Résaux</h1>
-	<section class="info">
+	<h1>Réseaux</h1>
+	<section class="social-links">
+		<div class="social-card facebook">
+			<div class="social-icon">
+				<svg viewBox="0 0 24 24" fill="currentColor">
+					<path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+				</svg>
+			</div>
+			<div class="social-info">
+				<h3>Facebook</h3>
+				<p>Suivez-moi sur Facebook</p>
+			</div>
+			<a href="https://www.facebook.com/hi.shikuro.9" target="_blank" class="social-link">Visiter</a>
+		</div>
 
-		<p> <span class="resInfo">Facebook :</span><a href="https://www.facebook.com/hi.shikuro.9">https://www.facebook.com/hi.shikuro.9</a></p>
-		<p><span class="resInfo">Instagram :</span><a href="https://www.instagram.com/hishikuro/?hl=fr">  https://www.instagram.com/hishikuro/?hl=fr</p>
-		<p><span class="resInfo">Tiktok :</span><a href="https://www.tiktok.com/@hi_shikuro">  https://www.tiktok.com/@hi_shikuro</p>
-		<p><span class="resInfo">Twitter :</span><a href="https://twitter.com/viry_brandon">https://twitter.com/viry_brandon </p>
-		<p><span class="resInfo">Youtube :</span><a href="https://www.youtube.com/channel/UC10RAIZCEe7NkJxE3HvMCRg"> https://www.youtube.com/channel/UC10RAIZCEe7NkJxE3HvMCRg</p>
-		<p><span class="resInfo">Reddit : </span><a href="https://www.reddit.com/user/Hi_shikuro "> https://www.reddit.com/user/Hi_shikuro </p>
-		<p><span class="resInfo">Discord:</span><a href="https://discord.gg/fUYbu8f">  https://discord.gg/fUYbu8f</p>
+		<div class="social-card instagram">
+			<div class="social-icon">
+				<svg viewBox="0 0 24 24" fill="currentColor">
+					<path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+				</svg>
+			</div>
+			<div class="social-info">
+				<h3>Instagram</h3>
+				<p>Photos et stories</p>
+			</div>
+			<a href="https://www.instagram.com/hishikuro/?hl=fr" target="_blank" class="social-link">Visiter</a>
+		</div>
+
+		<div class="social-card tiktok">
+			<div class="social-icon">
+				<svg viewBox="0 0 24 24" fill="currentColor">
+					<path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/>
+				</svg>
+			</div>
+			<div class="social-info">
+				<h3>TikTok</h3>
+				<p>Vidéos courtes</p>
+			</div>
+			<a href="https://www.tiktok.com/@hi_shikuro" target="_blank" class="social-link">Visiter</a>
+		</div>
+
+		<div class="social-card twitter">
+			<div class="social-icon">
+				<svg viewBox="0 0 24 24" fill="currentColor">
+					<path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+				</svg>
+			</div>
+			<div class="social-info">
+				<h3>Twitter</h3>
+				<p>Actualités et tweets</p>
+			</div>
+			<a href="https://twitter.com/viry_brandon" target="_blank" class="social-link">Visiter</a>
+		</div>
+
+		<div class="social-card youtube">
+			<div class="social-icon">
+				<svg viewBox="0 0 24 24" fill="currentColor">
+					<path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+				</svg>
+			</div>
+			<div class="social-info">
+				<h3>YouTube</h3>
+				<p>Chaîne vidéo</p>
+			</div>
+			<a href="https://www.youtube.com/channel/UC10RAIZCEe7NkJxE3HvMCRg" target="_blank" class="social-link">Visiter</a>
+		</div>
+
+		<div class="social-card reddit">
+			<div class="social-icon">
+				<svg viewBox="0 0 24 24" fill="currentColor">
+					<path d="M12 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0zm5.01 4.744c.688 0 1.25.561 1.25 1.249a1.25 1.25 0 0 1-2.498.056l-2.597-.547-.8 3.747c1.824.07 3.48.632 4.674 1.488.308-.309.73-.491 1.207-.491.968 0 1.754.786 1.754 1.754 0 .716-.435 1.333-1.01 1.614a3.111 3.111 0 0 1 .042.52c0 2.694-3.13 4.87-7.004 4.87-3.874 0-7.004-2.176-7.004-4.87 0-.183.015-.366.043-.534A1.748 1.748 0 0 1 4.028 12c0-.968.786-1.754 1.754-1.754.463 0 .898.196 1.207.49 1.207-.883 2.878-1.43 4.744-1.487l.885-4.182a.342.342 0 0 1 .14-.197.35.35 0 0 1 .238-.042l2.906.617a1.214 1.214 0 0 1 1.108-.701zM9.25 12C8.561 12 8 12.562 8 13.25c0 .687.561 1.248 1.25 1.248.687 0 1.248-.561 1.248-1.249 0-.688-.561-1.249-1.249-1.249zm5.5 0c-.687 0-1.248.561-1.248 1.25 0 .687.561 1.248 1.249 1.248.688 0 1.249-.561 1.249-1.249 0-.687-.562-1.249-1.25-1.249zm-5.466 3.99a.327.327 0 0 0-.231.094.33.33 0 0 0 0 .463c.842.842 2.484.913 2.961.913.477 0 2.105-.056 2.961-.913a.361.361 0 0 0 .029-.463.33.33 0 0 0-.464 0c-.547.533-1.684.73-2.512.73-.828 0-1.979-.196-2.512-.73a.326.326 0 0 0-.232-.095z"/>
+				</svg>
+			</div>
+			<div class="social-info">
+				<h3>Reddit</h3>
+				<p>Communauté</p>
+			</div>
+			<a href="https://www.reddit.com/user/Hi_shikuro" target="_blank" class="social-link">Visiter</a>
+		</div>
+
+		<div class="social-card discord">
+			<div class="social-icon">
+				<svg viewBox="0 0 24 24" fill="currentColor">
+					<path d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419-.0002 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1568 2.4189Z"/>
+				</svg>
+			</div>
+			<div class="social-info">
+				<h3>Discord</h3>
+				<p>Serveur communautaire</p>
+			</div>
+			<a href="https://discord.gg/fUYbu8f" target="_blank" class="social-link">Rejoindre</a>
+		</div>
+	</section>
+	<footer class="modern-footer">
+		<div class="footer-content">
+			<div class="footer-section">
+				<div class="footer-logo">
+					<img src="img/HSK.png" alt="HSK Logo">
+					<h3>HI_SHIKURO</h3>
+				</div>
+				<p class="footer-description">Créateur de contenu passionné, partageant mes aventures et créations avec la communauté.</p>
+			</div>
 			
-	
-	</section>
-
-	
-
-	<footer>
-		<p>Ce site est Réaliser par Hi_shikuro </p>
+			<div class="footer-section">
+				<h4>Navigation</h4>
+				<ul class="footer-links">
+					<li><a href="#home">Accueil</a></li>
+					<li><a href="#agenda">Agenda</a></li>
+					<li><a href="#social">Réseaux</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</div>
+			
+			<div class="footer-section">
+				<h4>Plateformes</h4>
+				<ul class="footer-links">
+					<li><a href="https://www.youtube.com/channel/UC10RAIZCEe7NkJxE3HvMCRg" target="_blank">YouTube</a></li>
+					<li><a href="https://www.twitch.tv/hi_shikuro" target="_blank">Twitch</a></li>
+					<li><a href="https://www.instagram.com/hishikuro/?hl=fr" target="_blank">Instagram</a></li>
+					<li><a href="https://discord.gg/fUYbu8f" target="_blank">Discord</a></li>
+				</ul>
+			</div>
+			
+			<div class="footer-section">
+				<h4>Contact</h4>
+				<div class="contact-info">
+					<p><i class="icon-mail"></i> hsk.hishikuro@gmail.com</p>
+					<p><i class="icon-location"></i> La Réunion, France</p>
+					<p><i class="icon-clock"></i> Réponse sous 24h</p>
+				</div>
+			</div>
+		</div>
+		
+		<div class="footer-bottom">
+			<div class="footer-bottom-content">
+				<p>&copy; 2024 Hi_shikuro. Tous droits réservés.</p>
+				<div class="footer-bottom-links">
+					<a href="#privacy">Politique de confidentialité</a>
+					<a href="#terms">Conditions d'utilisation</a>
+					<a href="#cookies">Cookies</a>
+				</div>
+			</div>
+		</div>
 	</footer>
 <script src="js/login.js"></script>
 </body>
